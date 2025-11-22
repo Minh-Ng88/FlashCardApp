@@ -1,0 +1,1 @@
+Vào thư mục "run" chọn file "FlashCardApp.exe"
