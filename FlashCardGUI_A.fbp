@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wxFormBuilder_Project>
+  <FileVersion major="4" minor="2" />
+  <object class="Project" name="FlashCardAppGUI">
+    <property name="code_generation">C++</property>
+    <property name="encoding">UTF-8</property>
+
+    <object class="Frame" name="MainFrame">
+      <property name="title">FlashCard App</property>
+      <property name="size">750,500</property>
+
+      <object class="wxBoxSizer" name="mainSizer">
+        <property name="orient">wxVERTICAL</property>
+
+        <object class="wxFlexGridSizer" name="grid">
+          <property name="cols">2</property>
+          <property name="vgap">8</property>
+          <property name="hgap">8</property>
+          <property name="growablecols">1</property>
+          <property name="growablerows">2,3</property>
+
+          <object class="StaticText" name="lblWord"><property name="label">Word:</property></object>
+          <object class="TextCtrl" name="txtWord"/>
+
+          <object class="StaticText" name="lblPron"><property name="label">Pronunciation:</property></object>
+          <object class="TextCtrl" name="txtPron"/>
+
+          <object class="StaticText" name="lblMeaning"><property name="label">Meaning:</property></object>
+          <object class="TextCtrl" name="txtMeaning"><property name="style">wxTE_MULTILINE</property></object>
+
+          <object class="StaticText" name="lblExample"><property name="label">Example:</property></object>
+          <object class="TextCtrl" name="txtExample"><property name="style">wxTE_MULTILINE</property></object>
+
+          <object class="StaticText" name="lblTopic"><property name="label">Topic:</property></object>
+          <object class="TextCtrl" name="txtTopic"/>
+
+          <object class="StaticText" name="lblLearned"><property name="label">Learned:</property></object>
+          <object class="CheckBox" name="chkLearned"/>
+        </object>
+
+        <object class="wxBoxSizer" name="navSizer">
+          <property name="orient">wxHORIZONTAL</property>
+          <object class="Button" name="btnPrev"><property name="label">&lt;- Prev</property></object>
+          <object class="Button" name="btnNext"><property name="label">Next -&gt;</property></object>
+        </object>
+
+        <object class="wxBoxSizer" name="actionSizer">
+          <property name="orient">wxHORIZONTAL</property>
+          <object class="Button" name="btnAdd"><property name="label">Add</property></object>
+          <object class="Button" name="btnUpdate"><property name="label">Update</property></object>
+          <object class="Button" name="btnRemove"><property name="label">Remove</property></object>
+          <object class="Button" name="btnSearch"><property name="label">Search</property></object>
+          <object class="Button" name="btnRemoveLearned"><property name="label">Remove Learned</property></object>
+          <object class="Button" name="btnStats"><property name="label">Statistics</property></object>
+        </object>
+
+      </object>
+    </object>
+
+  </object>
+</wxFormBuilder_Project>
